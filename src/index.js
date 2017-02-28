@@ -5,10 +5,7 @@ import Game from './components/Game';
 
 import styles from './styles/main.scss';
 
-
 export default class Application extends Component {
-
-
 
   render () {
     return (
@@ -19,8 +16,6 @@ export default class Application extends Component {
     )
   }
 }
-
-console.log('crabfinder');
 
 ReactDOM.render(
   <Application />,
