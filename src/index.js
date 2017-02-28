@@ -11,7 +11,6 @@ export default class Application extends Component {
     return (
       <div>
         <Game />
-
       </div>
     )
   }
