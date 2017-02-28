@@ -1,3 +1,15 @@
 .container{
   flex: 1;
+  background: linear-gradient(0deg, #30ced0, #225b81);
+  background-size: 400% 400%;
+  animation: SkyColorTransition 60s ease infinite;
+}
+
+@keyframes SkyColorTransition {
+    0%  { background-position:51% 100% }
+    20% { background-position:51% 100% }
+    25% { background-position:50% 0% }
+    70% { background-position:50% 0% }
+    75% { background-position:51% 100% }
+    100% { background-position:51% 100%}
 }
