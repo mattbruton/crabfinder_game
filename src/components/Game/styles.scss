@@ -1,0 +1,29 @@
+.container {
+  border: 5px solid salmon;
+  border-radius: 5px;
+  width: 50vw;
+  height: 50vw;
+  max-height: 500px;
+  max-width: 500px;
+  background: linear-gradient(0deg, #30ced0, #225b81);
+  background-size: 400% 400%;
+  animation: SkyColorTransition 60s ease infinite;
+
+  /* Flex container */
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+@media all and (max-width: 420px) {
+  .container{
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    max-height: none;
+    max-width: none;
+  }
+}

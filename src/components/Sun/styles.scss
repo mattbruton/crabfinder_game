@@ -1,0 +1,60 @@
+#svg {
+  width: 20%;
+  animation: spin 15s linear infinite;
+}
+
+#sun {
+  stroke-width: 4.5;
+  fill: orange;
+  animation: sunring 2.5s ease-in-out infinite, solar_fade 60s linear infinite;
+}
+
+#sun_middle {
+  fill: orange;
+  stroke: #fff;
+  stroke-width: .75;
+  animation: solar_fade 60s linear infinite;
+}
+
+.sunbeam{
+  stroke: 0px;
+  animation: sunshine 2.5s ease-in-out infinite, solar_fade 60s linear infinite;
+}
+
+.sunbeam_small {
+  animation: sunshine_2 2.5s ease-in-out infinite, solar_fade 60s linear infinite;
+}
+
+@keyframes solar_fade {
+  0% { opacity: 1; }
+  24.5% { opacity: .5; }
+  25% { opacity: 0; }
+  74% { opacity : .1; }
+  74.5% { opacity: .5; }
+  75% { opacity: 1; }
+}
+
+@keyframes sunshine {
+	0% { fill:#FFCC00; stroke:#f1c40f; }
+  25% { fill: #f1c40f; stroke:#FFCC00; }
+	75% { fill: #FFCC00; stroke:#f1c40f; }
+  100% { fill: #f1c40f; stroke:#FFCC00; }
+}
+
+@keyframes sunshine_2 {
+	0% { fill:#FFCC00; stroke:#f1c40f; }
+  25% { fill: #FF9E00; stroke:#FFCC00; }
+	75% { fill: #FFCC00; stroke:#f1c40f; }
+  100% { fill: #FF9E00; stroke:#FFCC00; }
+}
+
+@keyframes sunring {
+  0% { stroke:#FFCC00; }
+  25% { stroke:#f1c40f; }
+	75% { stroke:#FFCC00; }
+  100% { stroke:#f1c40f; }
+}
+
+@keyframes spin {
+	100% { transform: rotate(360deg); }
+}
